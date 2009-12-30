@@ -1,0 +1,9 @@
+#!/bin/sh
+cp -v plugin.xml out/production/YaleInstanceEditor
+
+cd out/production/YaleInstanceEditor
+
+zip -rv yaleAnalogInstanceEditor.zip . -i \*.class *.xml
+
+cp -v yaleAnalogInstanceEditor.zip /Users/leemandell/archivistsToolkit/atProject/plugins
+cp -v yaleAnalogInstanceEditor.zip /Users/leemandell/archivistsToolkit/vanilla\ AT\ 2.0/plugins
